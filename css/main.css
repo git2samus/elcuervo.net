@@ -66,6 +66,17 @@ body {
   position: absolute;
 }
 
+.cover-attribution {
+  position: absolute;
+  font-family: "Lucida Grande";
+  margin-left: 8%;
+  bottom: 20px;
+  color: rgb(170, 170, 170);
+  opacity: 0.2;
+  right: 20px;
+  z-index: 1;
+}
+
 .cover-title {
   height: 30%;
   position: absolute;

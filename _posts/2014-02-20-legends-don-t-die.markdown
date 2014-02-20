@@ -4,6 +4,7 @@ title: Legends don't die
 categories: thoughts
 published: true
 header: jim.jpg
+attribution: Photo from @konstantinhaase
 
 ---
 
