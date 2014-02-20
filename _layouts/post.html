@@ -1,7 +1,12 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
+<header class="cover">
+  <div class="cover-title"> <h2>{{ page.title }}</h2> </div>
+  <div class="cover-layout"></div>
+  <div class="cover-image" style="background-image: url(/img/headers/{{ page.header }})"></div>
+</header>
+
 <p class="meta">{{ page.date | date_to_string }}</p>
 
 <div class="post">
