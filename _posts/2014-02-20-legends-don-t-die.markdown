@@ -1,11 +1,15 @@
 ---
 layout: post
 title: Legends don't die
-categories: relief
+categories: thoughts
 published: true
 header: jim.jpg
 
 ---
+
+Today is a sad sad day. Today is the day that Jim Weirich died.
+
+This is my way of handling the grief:
 
 > He was that way. A long time before the gender wars, even before concurrency
 > debate there was this man. He saw in you stuff that you couldn't find in the
@@ -16,7 +20,7 @@ header: jim.jpg
 > laugh.
 
 > He was that way. After being part of the internet for so long he always wanted
-> to give eveyone a change, you could always learn something from him... from
+> to give eveyone a chance, you could always learn something from him... from
 > yourself.
 
 > I know it's hard for you to understand. I know that everyone around you rants
@@ -46,3 +50,16 @@ header: jim.jpg
 > don't die.
 
 > You are standing on the shoulders of a kind giant... now aim higher.
+
+Some people want to live forever but only a few will.
+Jim is one of those people.
+
+Every time someone will run `rake` or just think about testing he will be there.
+Inspiring all of us.
+
+All the blogpost written today talk about his kindness and about the way he made
+everyone he touched a better person.
+
+I'm lucky enough to have shared some time with him, working, learning, laughing.
+
+Thank you kind giant, now sleep.
