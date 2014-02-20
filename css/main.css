@@ -7,7 +7,7 @@ body {
   height: 100%;
 }
 
-#home {
+#home, #disqus_thread {
   width: 700px;
   margin: 0 auto;
 }
