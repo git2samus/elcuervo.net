@@ -10,7 +10,7 @@ attribution: Photo from @konstantinhaase
 
 Today is a sad sad day. Today is the day that Jim Weirich died.
 
-This is my way of handling the grief:
+Writing this is my way of handling the grief:
 
 > He was that way. A long time before the gender wars, even before concurrency
 > debate there was this man. He saw in you stuff that you couldn't find in the
