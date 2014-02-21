@@ -44,6 +44,15 @@ a {
   margin-bottom: 2px
 }
 
+.posts h3 {
+  margin: 2px;
+  letter-spacing: -0.02em;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 1.1;
+}
+
 .posts time {
   font-family: Georgia;
   font-style: italic;
