@@ -21,14 +21,14 @@ Writing this is my way of handling the grief:
 > laugh.
 
 > He was that way. After being part of the internet for so long he always wanted
-> to give eveyone a chance, you could always learn something from him... from
+> to give everyone a chance, you could always learn something from him... from
 > yourself.
 
 > I know it's hard for you to understand. I know that everyone around you rants
 > and criticize everything you say. I know that people around you enjoy trying
 > to look better than you, belive me... I know.
 
-> But the world was different back then, it's fisically the same planet but a
+> But the world was different back then, it's the same planet but a
 > lot changed. People focus on their differences now, they look for every single
 > detail that makes them different trying to ignore the absurd amount of things
 > that makes all of us the same.
