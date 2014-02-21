@@ -3,6 +3,10 @@ body {
   margin: 0;
 }
 
+a {
+  color: black
+}
+
 .site {
   height: 100%;
 }
