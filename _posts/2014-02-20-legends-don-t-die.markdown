@@ -5,7 +5,7 @@ subtitle: The story of Jim Weirich
 categories: thoughts
 published: true
 header: jim.jpg
-attribution: Photo from @konstantinhaase
+attribution: @konstantinhaase
 
 ---
 
