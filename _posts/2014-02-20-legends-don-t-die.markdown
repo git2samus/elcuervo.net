@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Legends don't die
+subtitle: The story of Jim Weirich
 categories: thoughts
 published: true
 header: jim.jpg
