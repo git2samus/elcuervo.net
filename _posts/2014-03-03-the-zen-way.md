@@ -224,6 +224,9 @@ I'm extremely proud of her and I'm eager to know what's next.
 
 She wrote her journey in [her blog](http://ihatehandshakes.com/blog/2014/it-takes-a-village-to-make-a-programmer/)
 
+**UPDATE:** Currently I see the blog down, but you can see a [cached
+version](http://webcache.googleusercontent.com/search?q=cache:ihatehandshakes.com/blog/2014/it-takes-a-village-to-make-a-programmer/)
+
 I started applying that minimalism to my life and my work habits.
 
 I don't have services on login, I have this in my `.zshrc` and this
