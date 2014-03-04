@@ -125,7 +125,7 @@ as a hacky way on doing stuff but as a form of art.
 
 The first gem I wrote was [Ohm find_by](https://github.com/elcuervo/ohm-find_by)
 just because I wanted to have some of the stuff made Rails easy while using
-[Ohm](github.com/soveran/ohm).
+[Ohm](https://github.com/soveran/ohm).
 
 And then it happened. I needed something. But every thing I found had a lot of
 code impossible to read or understand. I needed a testing framework for the
