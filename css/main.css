@@ -3,6 +3,10 @@ body {
   margin: 0;
 }
 
+article img {
+  max-width: 700px
+}
+
 a {
   color: black
 }
