@@ -93,6 +93,8 @@ life.
 Some things inspire you to go the extra mile. Some things trigger that part of
 you that was asleep. Some things happen all over again.
 
+# Disobey
+
 > And our topic is topsy-turvy: civil disobedience. As soon as you say the topic
 > is civil disobedience, you are saying our problem is civil disobedience. That
 > is not our problem.... Our problem is civil obedience. Our problem is the
@@ -121,3 +123,14 @@ give everyone the chance to choose, to love, to hate to be free in all extent.
 
 I might be in the wrong path... but this time, this time I choosed this path and
 I'm going to defend it.
+
+Programmers, designers, journalists, creators. That skill to make something from
+nothingness, that skill inherent in every person.
+
+Being a rebel, an inconformist it's also part of everyone.
+And at the end freedom, that gift with our first breath, is not optional. It's
+not a law, a right... it's a condition. A living being condition that can't be
+removed, can't be bought.
+
+We are the victims of our own fears, of our own demons, of our own humanity.
+Today... today is the day we fight back.
