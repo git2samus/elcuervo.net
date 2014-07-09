@@ -72,14 +72,6 @@ My war today is against the ones who think their way is the only way, because
 once there was only one acceptable gender of one acceptable color and one
 acceptable faith.
 
-> What are you trying to tell me? That I can dodge bullets?
-> No. I'm trying to tell you that when you're ready, you won't have to.
-
-We have so many things in common that we have to dig for the ones that makes us
-different so we can kills us without remorse.
-
-In our thoughts is the creativity, the strenght to move forward.
-
 # A rock in a pond
 
 > For to be free is not merely to cast off one's chains, but to live in a way
