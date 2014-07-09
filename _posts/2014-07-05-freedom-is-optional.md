@@ -113,3 +113,11 @@ that is not a barrier to battle the brutality.
 "without rulers")_
 
 Anarchy is not only a political view, but also a philosofical one.
+Anarchy is often tied with violence, with hate.
+I'm seeing a world of violence, with hate.
+
+I don't want to have the one true way of living. I want to dedicate my life to
+give everyone the chance to choose, to love, to hate to be free in all extent.
+
+I might be in the wrong path... but this time, this time I choosed this path and
+I'm going to defend it.
