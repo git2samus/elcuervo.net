@@ -3,7 +3,7 @@ layout: post
 title: Freedom is optional
 subtitle: Life on the grid
 categories: [freedom, oss]
-date: 2014-03-05
+date: 2014-07-05
 header: freedom.jpg
 attribution: sss-showcase
 
@@ -53,25 +53,9 @@ Security bugs and also the backdoor kind exist in a ton of software and even in
 hardware. The curiosity to know and the interest to do so is a powerful hand
 that does not care about software or hardware.
 
-Today, a friend called my hypocrite because I'm writing this words using a
-Macbook Air. It's not the first time, and probably it's not going to be the
-last. I suscribe to OSS, I've dedicated my life to it, releasing the best software
-I can. I have a filosophical love to open source and open hardware but beyond
-all that I want to be free.
-
 Free of choice, free of thought, free of discrimination, of persecution. I do
 not accept the **one true way of living** ideals.
-I've started to build my software in `Go` because I want every platform to be
 able to run it.
-
-Maybe some day the world won't need corporations like Microsoft, Sony, Apple or
-Telefonica. But they do today.
-
-Maybe some day the world won't need ATI, Nvidia or Intel. But they do today.
-
-[Luis Lavena](https://github.com/luislavena) is a Ruby Hero and most of the time
-he gets trolled because he is mantaining Ruby for Windows. He is giving tools to
-the people not judging them for their choices.
 
 I've started coding PHP, but I'm no PHP dev. I've worked with Python, but I'm no
 Python dev. Most of my career is around Ruby, but I'm no Ruby dev.
@@ -95,21 +79,6 @@ We have so many things in common that we have to dig for the ones that makes us
 different so we can kills us without remorse.
 
 In our thoughts is the creativity, the strenght to move forward.
-
-## GPG
-
-```bash
-```
-
-## Tor
-
-## Bitmessage
-
-## Crypto.cat
-
-<iframe src="//player.vimeo.com/video/38439169" width="500" height="281"
-frameborder="0" webkitallowfullscreen mozallowfullscreen
-allowfullscreen></iframe>
 
 # A rock in a pond
 
@@ -151,4 +120,4 @@ that is not a barrier to battle the brutality.
 ἀν an, "not, without" + ἀρχός arkhos, "ruler", meaning "absence of a ruler",
 "without rulers")_
 
-Anarchy is not only a political view, but also a philosofical one
+Anarchy is not only a political view, but also a philosofical one.
