@@ -49,7 +49,7 @@ It does not matter if you use Windows, Linux or OSX you are on the grid and you
 know it. There's no **real** freedom out there. Because it's not about the
 software you use, it's how you use it and in our specific case how you build it.
 
-Security bugs and also the backdoor kind exist in a ton of software and even in
+Security bugs (including, but not limited to, backdoors) exist in a ton of software and even in
 hardware. The curiosity to know and the interest to do so is a powerful hand
 that does not care about software or hardware.
 
@@ -69,7 +69,7 @@ My war today is against people who want to tell me how to think, how to feel.
 Against people who wants to tag me and use me in a statistic.
 
 My war today is against the ones who think their way is the only way, because
-once there was only one acceptable gender of one acceptable color and one
+once there was only one acceptable gender, one acceptable color, one
 acceptable faith.
 
 # A rock in a pond
@@ -107,7 +107,7 @@ you that was asleep. Some things happen all over again.
 These words made me realize something. This is not the first time this happened,
 some things in our world are repetitive.
 
-These acts of rebeldy are a vestige of the vox populi, now vacant, vanished. But
+These acts of defiance are a vestige of the vox populi, now vacant, vanished. But
 that is not a barrier to battle the brutality.
 
 **Anarchy** _comes from the ancient Greek ἀναρχία, anarchia, from
