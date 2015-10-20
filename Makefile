@@ -17,8 +17,9 @@ blog: share
 travels: share
 	cd travels && jekyll build .
 
-sync:
+sync: blog travels
 	mkdir -p _site
 	mv blog/_site _site/blog
 	mv travels/_site _site/travels
 	rsync -azP _site/ www@elcuervo.net:~/elcuervo.net/
+	rm -rf _site

@@ -24,6 +24,7 @@ a {
 
 #menu {
   list-style-type: none;
+  width: 100px;
 }
 
 #menu li {

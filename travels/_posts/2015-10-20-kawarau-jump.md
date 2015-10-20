@@ -9,8 +9,6 @@ attribution: AJ
 
 ---
 
-Dolor tempore accusantium dignissimos at illo vitae deserunt cum. Obcaecati nesciunt magni omnis tempore accusantium aliquam, itaque laborum architecto repellat illo veniam consequatur aliquam. Ducimus minima ea dolorum molestias sapiente.
-
 ![](/img/kawarau/k01.jpg)
 
 ![](/img/kawarau/k02.jpg)
