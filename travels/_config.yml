@@ -1,7 +1,4 @@
 name: elCuervo
 markdown: redcarpet
-pygments: true
+highlighter: pygments
 permalink: /:title
-exclude:
-  - Dockerfile
-  - nginx.conf

@@ -5,6 +5,7 @@ subtitle: Rise again
 categories: [life]
 date: 2015-05-14
 header: crows.jpg
+published: false
 attribution: Caden Crawford
 ---
 
