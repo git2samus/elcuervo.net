@@ -8,6 +8,9 @@ share:
 	cp -r css travels/
 	cp -r humans.txt travels/
 
+resize:
+	convert *.jpg -define jpeg:extent=500kb
+
 blog: share
 	cd blog && jekyll build .
 
