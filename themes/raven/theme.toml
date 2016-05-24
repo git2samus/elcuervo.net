@@ -1,0 +1,12 @@
+name = "Raven"
+license = "MIT-HUGWARE"
+licenselink = "https://github.com/elcuervo/hugo-raven/blob/master/LICENSE.md"
+description = ""
+tags = ["blog"]
+features = ["blog"]
+min_version = 0.15
+
+[author]
+    name = "elcuervo"
+    homepage = "https://blog.elcuervo.net"
+

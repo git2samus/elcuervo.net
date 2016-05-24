@@ -1,0 +1,193 @@
+html, body { height: 100%; }
+body {
+  margin: 0;
+}
+
+article img {
+  max-width: 700px;
+  display: block;
+  margin: 0 auto;
+}
+
+a {
+  color: black
+}
+
+.site {
+  height: 100%;
+}
+
+#home, #disqus_thread {
+  width: 700px;
+  margin: 0 auto;
+}
+
+#menu {
+  list-style-type: none;
+  width: 100px;
+}
+
+#menu li {
+  float: left;
+}
+
+#menu a {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.posts {
+  list-style-type: none;
+}
+
+.posts a {
+  color: black;
+  text-decoration: none;
+}
+
+.posts h2 {
+  margin-bottom: 2px
+}
+
+.posts h3 {
+  margin: 2px;
+  letter-spacing: -0.02em;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 1.1;
+}
+
+.posts time {
+  font-family: Georgia;
+  font-style: italic;
+}
+
+.cover {
+  height: 100%;
+  margin-top: 0;
+  position: relative;
+}
+
+.cover-back a {
+  position: absolute;
+  margin-left: 4%;
+  margin-top: 4%;
+  color: white;
+  z-index: 1;
+  text-decoration: none;
+}
+
+.topbar {
+  width: 100%;
+  height: 5px;
+  background-color: black;
+}
+
+.cover-layout {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+}
+
+.cover-attribution {
+  position: absolute;
+  font-family: "Lucida Grande";
+  margin-left: 8%;
+  bottom: 20px;
+  color: rgb(170, 170, 170);
+  opacity: 0.2;
+  right: 20px;
+  z-index: 1;
+}
+
+.cover-title {
+  height: 30%;
+  position: absolute;
+  margin-left: 8%;
+  bottom: 0;
+  z-index: 1;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Lucida Grande";
+}
+
+h2 {
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+}
+
+.cover-title h2 {
+  color: white;
+  font-size: 50px;
+  margin-bottom: 5px;
+}
+
+.cover-title h3 {
+  letter-spacing: -0.02em;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 1.1;
+  color: white;
+  opacity: 0.65;
+  margin: 0;
+}
+
+.cover-image {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.post {
+  margin-top: 25px;
+  margin-bottom: 30px;
+  font-family: Georgia;
+  letter-spacing: .01rem;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+  line-height: 1.5;
+  color: #5b5b5b
+}
+
+.special-post {
+  float: left;
+  margin-left: -5%;
+  margin-top: 0.7%;
+}
+
+.content {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.content iframe, .content pre {
+  width: 120%;
+  margin-left: -10%;
+}
+
+.content pre {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+blockquote {
+  font-style: italic;
+}
+
+footer {
+  height: 100px
+}

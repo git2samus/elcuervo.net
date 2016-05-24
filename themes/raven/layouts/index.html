@@ -1,0 +1,19 @@
+{{ partial "header.html" . }}
+
+<section id="home">
+  <ul class="posts">
+    {{ range (.Paginate .Data.Pages).Pages }}
+    <li>
+      <div class="special-post">
+        <i class="fa fa-{{ .Params.icon }}" aria-hidden="true"></i>
+      </div>
+      <a href="{{ .Permalink }}">
+        <h2>{{ .Title }}</h2>
+        <h3>{{ .Params.subtitle }}</h3>
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+</section>
+
+</html>
