@@ -2,8 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/</loc>
+    <loc>/</loc>
+    <lastmod>2014-07-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/blog/freedom-is-optional/</loc>
+    <lastmod>2014-07-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/the-zen-way/</loc>
+    <lastmod>2014-03-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/gost/</loc>
+    <lastmod>2014-02-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/twitcher/</loc>
+    <lastmod>2014-02-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/travels/kawarau-jump/</loc>
+  </url>
+  
+  <url>
+    <loc>/blog/legends-dont-die/</loc>
   </url>
   
 </urlset>

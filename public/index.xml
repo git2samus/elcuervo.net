@@ -1,12 +1,679 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
-    <link>http://replace-this-with-your-hugo-site.com/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <title>elcuervo</title>
+    <link>/</link>
+    <description>Recent content on elcuervo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 05 Jul 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Freedom is optional</title>
+      <link>/blog/freedom-is-optional/</link>
+      <pubDate>Sat, 05 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/freedom-is-optional/</guid>
+      <description>
+
+&lt;p&gt;I have the tendency to balance my full nerd side with nature. Camping really far
+away with the bare minimum. I like to go off the grid.&lt;/p&gt;
+
+&lt;p&gt;Not so many years ago we lived without checking on Foursquare, without telling
+what we were doing on Twitter or who is our partner on Facebook. We even lived
+without sms. Only with spare change in our pockets and ideas in our minds.&lt;/p&gt;
+
+&lt;p&gt;The digital revolution came and we went from connecting to the internet some
+times of the day, to struggle to disconnect some times of the day.
+We now are premanently on-the-grid.&lt;/p&gt;
+
+&lt;p&gt;Since I was born in a third world country where access to information was limited
+having nowdays the ability to be constantly connected felt awesome. All the information of
+mankind in one place. I could learn anything, free, I just needed to spend some
+time and I could learn the most complex networking papers or read the most touching
+poems.&lt;/p&gt;
+
+&lt;p&gt;Other problems araised, we started to get confused with the amount of
+communication we had&amp;hellip; started to think that it was actual connection:&lt;/p&gt;
+
+&lt;iframe src=&#34;//player.vimeo.com/video/70534716&#34; width=&#34;500&#34; height=&#34;281&#34;
+frameborder=&#34;0&#34; webkitallowfullscreen mozallowfullscreen
+allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;But like with everything there&amp;rsquo;s a trade off. Not everyone looked at the
+internet as an information source, a lot looked at it as an oportuniy but a
+handful of them started this ancient trend of privacy invasion.&lt;/p&gt;
+
+&lt;p&gt;We now know that a lot of goverments are eager to know everything we do.
+Obviously this is not limited to goverments but also companies, from small ones
+to mega corporations.&lt;/p&gt;
+
+&lt;iframe src=&#34;//player.vimeo.com/video/82666985&#34; width=&#34;500&#34; height=&#34;281&#34;
+frameborder=&#34;0&#34; webkitallowfullscreen mozallowfullscreen
+allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;It does not matter if you use Windows, Linux or OSX you are on the grid and you
+know it. There&amp;rsquo;s no &lt;strong&gt;real&lt;/strong&gt; freedom out there. Because it&amp;rsquo;s not about the
+software you use, it&amp;rsquo;s how you use it and in our specific case how you build it.&lt;/p&gt;
+
+&lt;p&gt;Security bugs (including, but not limited to, backdoors) exist in a ton of software and even in
+hardware. The curiosity to know and the interest to do so is a powerful hand
+that does not care about software or hardware.&lt;/p&gt;
+
+&lt;p&gt;Free of choice, free of thought, free of discrimination, of persecution. I do
+not accept the &lt;strong&gt;one true way of living&lt;/strong&gt; ideals.
+able to run it.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve started coding PHP, but I&amp;rsquo;m no PHP dev. I&amp;rsquo;ve worked with Python, but I&amp;rsquo;m no
+Python dev. Most of my career is around Ruby, but I&amp;rsquo;m no Ruby dev.
+I&amp;rsquo;m a developer. I love to code anything, in any language.&lt;/p&gt;
+
+&lt;p&gt;And I&amp;rsquo;m not tied to any OS, I&amp;rsquo;m writing this in OSX but I own several machines
+with several OSs. I enjoy being a poweruser in any system, as well as other
+people.&lt;/p&gt;
+
+&lt;p&gt;My war today is against people who want to tell me how to think, how to feel.
+Against people who wants to tag me and use me in a statistic.&lt;/p&gt;
+
+&lt;p&gt;My war today is against the ones who think their way is the only way, because
+once there was only one acceptable gender, one acceptable color, one
+acceptable faith.&lt;/p&gt;
+
+&lt;h1 id=&#34;a-rock-in-a-pond:ec7f2f36e548c1f1f32c9e72d1aa72b3&#34;&gt;A rock in a pond&lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;For to be free is not merely to cast off one&amp;rsquo;s chains, but to live in a way
+that respects and enhances the freedom of others.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Nelson Mandela&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Sometimes enough is enough. Sometimes a part of you can&amp;rsquo;t take things anymore.
+Sometimes you are not going to wait for someone to fix things. Sometimes it has
+to be you.&lt;/p&gt;
+
+&lt;p&gt;Being a programmer is by far the most important thing that I achieved in my
+life.&lt;/p&gt;
+
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;095e73303aab0131eddb6ef1f34b6106&#34; data-ratio=&#34;1.33333333333333&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+
+&lt;iframe src=&#34;//player.vimeo.com/video/90438418?byline=0&amp;amp;portrait=0&amp;amp;color=97ceec&#34; width=&#34;500&#34; height=&#34;281&#34; frameborder=&#34;0&#34; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Some things inspire you to go the extra mile. Some things trigger that part of
+you that was asleep. Some things happen all over again.&lt;/p&gt;
+
+&lt;h1 id=&#34;disobey:ec7f2f36e548c1f1f32c9e72d1aa72b3&#34;&gt;Disobey&lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;And our topic is topsy-turvy: civil disobedience. As soon as you say the topic
+is civil disobedience, you are saying our problem is civil disobedience. That
+is not our problem&amp;hellip;. Our problem is civil obedience. Our problem is the
+numbers of people all over the world who have obeyed the dictates of the
+leaders of their government and have gone to war, and millions have been
+killed because of this obedience.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Howard Zinn&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;These words made me realize something. This is not the first time this happened,
+some things in our world are repetitive.&lt;/p&gt;
+
+&lt;p&gt;These acts of defiance are a vestige of the vox populi, now vacant, vanished. But
+that is not a barrier to battle the brutality.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Anarchy&lt;/strong&gt; &lt;em&gt;comes from the ancient Greek ἀναρχία, anarchia, from
+ἀν an, &amp;ldquo;not, without&amp;rdquo; + ἀρχός arkhos, &amp;ldquo;ruler&amp;rdquo;, meaning &amp;ldquo;absence of a ruler&amp;rdquo;,
+&amp;ldquo;without rulers&amp;rdquo;)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Anarchy is not only a political view, but also a philosofical one.
+Anarchy is often tied with violence, with hate.
+I&amp;rsquo;m seeing a world of violence, with hate.&lt;/p&gt;
+
+&lt;p&gt;I don&amp;rsquo;t want to have the one true way of living. I want to dedicate my life to
+give everyone the chance to choose, to love, to hate to be free in all extent.&lt;/p&gt;
+
+&lt;p&gt;I might be in the wrong path&amp;hellip; but this time, this time I choosed this path and
+I&amp;rsquo;m going to defend it.&lt;/p&gt;
+
+&lt;p&gt;Programmers, designers, journalists, creators. That skill to make something from
+nothingness, that skill inherent in every person.&lt;/p&gt;
+
+&lt;p&gt;Being a rebel, an inconformist it&amp;rsquo;s also part of everyone.
+And at the end freedom, that gift with our first breath, is not optional. It&amp;rsquo;s
+not a law, a right&amp;hellip; it&amp;rsquo;s a condition. A living being condition that can&amp;rsquo;t be
+removed, can&amp;rsquo;t be bought.&lt;/p&gt;
+
+&lt;p&gt;We are the victims of our own fears, of our own demons, of our own humanity.
+Today&amp;hellip; today is the day we fight back.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The zen way</title>
+      <link>/blog/the-zen-way/</link>
+      <pubDate>Mon, 03 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/the-zen-way/</guid>
+      <description>
+
+&lt;p&gt;Sometimes I wonder about my choices. I wonder about my look, the things I say,
+the reactions I trigger on people. But since a long time I do not wonder about
+one thing: my code choices and how they triggered a life choice.&lt;/p&gt;
+
+&lt;p&gt;There are some things that change the way you think. I tend to prefer simple
+approaches to things, specially complex problems. I don&amp;rsquo;t see right complex
+solutions only because the problem looks complex itself.&lt;/p&gt;
+
+&lt;p&gt;So this is a brief story on my journey from a complex point of view &lt;strong&gt;ONLY&lt;/strong&gt; in code
+to a minimal view not only in code but also in my life.&lt;/p&gt;
+
+&lt;h1 id=&#34;allow-yourself-to-be-inspired:914233283eb0f8905d54c17cc4e38b56&#34;&gt;Allow yourself to be inspired&lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Everything should be made as simple as possible, but not simpler.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Albert Einstein&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;My way started some years ago after struggling with Rails and don&amp;rsquo;t finding
+peace with it. I was spending more time fighting with layers and layers of code
+that my boss promised me will make my life easier. It was not, I was angry on
+the lack of understanding I had. I was angry at me.&lt;/p&gt;
+
+&lt;p&gt;The code you write it&amp;rsquo;s nothing more than a reflection of who you are, code it&amp;rsquo;s
+a part of you. That&amp;rsquo;s why we need creativity, that&amp;rsquo;s why we burnout because when
+that reflection fades, a part of us does the same.&lt;/p&gt;
+
+&lt;p&gt;I was promised a world of awesomeness after I started coding with Rails. I fell
+in love with Ruby when I started but some time working only with Rails&amp;hellip; well I
+derailed.&lt;/p&gt;
+
+&lt;p&gt;I felt empty, that code was not me. And that was poisonous for me. I do not have
+a work-life and a life in another place. This is my life&amp;hellip; work and OSS are
+parts that define me so doing something annoying breaks my soul.&lt;/p&gt;
+
+&lt;p&gt;And then it happened. We were visited by &lt;a href=&#34;https://github.com/soveran&#34;&gt;soveran&lt;/a&gt;
+and he introduced us his latest project: &lt;a href=&#34;https://github.com/soveran/cuba&#34;&gt;Cuba&lt;/a&gt;
+at that point based on &lt;a href=&#34;https://github.com/chneukirchen/rum&#34;&gt;Rum&lt;/a&gt;, maybe you
+recognize the name of the author because he wrote
+&lt;a href=&#34;https://github.com/rack/rack&#34;&gt;Rack&lt;/a&gt;. The project later evolved to a standalone
+lib that didn&amp;rsquo;t use Rum at all.&lt;/p&gt;
+
+&lt;p&gt;Long story short I viewed a world beyond the cluttered Rails philosophy. And I
+saw that another lifestyle was possible, that my demands of a simpler work-style
+could be achievable.&lt;/p&gt;
+
+&lt;p&gt;I was still struggling with Rails in my work. I couldn&amp;rsquo;t understand why someone
+could see this as &amp;ldquo;fast development&amp;rdquo;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;class ETooMuchMagic &amp;lt; ApplicationController
+  def index
+  end
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Against something like &lt;a href=&#34;http://www.sinatrarb.com/&#34;&gt;Sinatra&lt;/a&gt; that was the first
+thing I saw as simple.
+Don&amp;rsquo;t get me wrong, Sinatra is really pretty&amp;hellip; but still&amp;hellip; there&amp;rsquo;s magic
+there. And I&amp;rsquo;m a person of science.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;get &amp;quot;/magic&amp;quot; do
+  erb :index
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;That&amp;rsquo;s why I started to use Cuba all the time, in every scenario just for the
+love of it.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;on &amp;quot;magic&amp;quot; do
+  res.write &amp;quot;Roll your own&amp;quot;
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Obviously the place I worked wasn&amp;rsquo;t really happy about that choice and I only
+were &amp;ldquo;allowed&amp;rdquo; to use Cuba once in a client project.&lt;/p&gt;
+
+&lt;p&gt;And then I got the point of so much minimalism&amp;hellip; I started seeing beyond the
+code itself.&lt;/p&gt;
+
+&lt;p&gt;There were something else, I&amp;rsquo;ve started trying to understandd it&amp;hellip; every piece of
+code. The concept of &lt;a href=&#34;http://en.wikipedia.org/wiki/Middleware&#34;&gt;Middlewares&lt;/a&gt;
+started to appear, pattern matching,
+caching, HTTP codes, headers&amp;hellip; lot of stuff that was hidden in the magic for
+my &amp;ldquo;protection&amp;rdquo;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;Cuba.use Cuba::Render
+Cuba.use Middleware::Of::Your::Choice
+
+Cuba.define do
+  on root do
+    res.write view(&amp;quot;home&amp;quot;)
+  end
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I was forced to learn&amp;hellip; to understand, and that&amp;rsquo;s the difference. I was really
+understanding every part of the app. When things go wrong I could easily
+identify it and fix it&amp;hellip; I was extremelly happy knowing that the app was truly
+a part of me.&lt;/p&gt;
+
+&lt;h1 id=&#34;build-your-own-tools:914233283eb0f8905d54c17cc4e38b56&#34;&gt;Build your own tools&lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Simplicity is the final achievement. After one has played a vast quantity of
+notes and more notes, it is simplicity that emerges as the crowning reward of
+art.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Frederic Chopin&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;When you start to understand how things work you fall in love of simplicity. Not
+as a hacky way on doing stuff but as a form of art.&lt;/p&gt;
+
+&lt;p&gt;The first gem I wrote was &lt;a href=&#34;https://github.com/elcuervo/ohm-find_by&#34;&gt;Ohm find_by&lt;/a&gt;
+just because I wanted to have some of the stuff made Rails easy while using
+&lt;a href=&#34;https://github.com/soveran/ohm&#34;&gt;Ohm&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;And then it happened. I needed something. But every thing I found had a lot of
+code impossible to read or understand. I needed a testing framework for the
+browser&amp;hellip; just a simple &lt;code&gt;assert&lt;/code&gt;. But I couldn&amp;rsquo;t find nothing.
+That&amp;rsquo;s how &lt;a href=&#34;https://github.com/elcuervo/gerbil&#34;&gt;Gerbil&lt;/a&gt; was born&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;scenario(&amp;quot;This is my scenario&amp;quot;, {
+  &amp;quot;setup&amp;quot;:  function()  { /* When scenario starts */ },
+  &amp;quot;before&amp;quot;: function()  { /* Before every test */ },
+  &amp;quot;after&amp;quot;:  function()  { /* After every test */ },
+  &amp;quot;cleanup&amp;quot;: function() { /* When the scenario ends */ },
+
+  &amp;quot;MagicThing should have a length&amp;quot;: function(g) {
+    this.someThing.add(1);
+    g.assertEqual(this.someThing.length, 1);
+  },
+
+  &amp;quot;MagicThing should be valid&amp;quot;: function(g) {
+    g.assert(this.someThing.valid);
+  }
+});
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And it worked&amp;hellip; it is crappy code but it worked. Simple, straightforward and
+readable since it&amp;rsquo;s only one file.&lt;/p&gt;
+
+&lt;p&gt;That was all that I needed to test &lt;a href=&#34;https://github.com/elcuervo/lodis&#34;&gt;Lodis&lt;/a&gt;
+another project just for fun.&lt;/p&gt;
+
+&lt;p&gt;And then the snowball effect&amp;hellip; I couldn&amp;rsquo;t stop. Open source became part of me.
+A really important part. The things I learned from all the incredible people out
+there is just amazing.&lt;/p&gt;
+
+&lt;p&gt;The same inspiration &amp;ldquo;forced&amp;rdquo; me to try to share my thoughts. My ideas.
+And with minimalism in mind I gave this talk:&lt;/p&gt;
+
+&lt;iframe src=&#34;//player.vimeo.com/video/44025029&#34; width=&#34;500&#34; height=&#34;283&#34; frameborder=&#34;0&#34; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h1 id=&#34;you-won-t-be-alone:914233283eb0f8905d54c17cc4e38b56&#34;&gt;You won&amp;rsquo;t be alone&lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Perfection is achieved, not when there is nothing more to add, but when there
+is nothing left to take away.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Antoine de Saint-Exupe&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I was surprised with this new world, minimal code and joyful solutions. But what
+really surprised me was the world I joined.&lt;/p&gt;
+
+&lt;p&gt;A lot of brilliant people are out there ready to show you their ways. You can be
+blown away with people like &lt;a href=&#34;https://github.com/cyx&#34;&gt;cyx&lt;/a&gt; and his amazing
+&lt;a href=&#34;https://github.com/cyx/dep&#34;&gt;dep&lt;/a&gt;, or &lt;a href=&#34;https://github.com/inkel&#34;&gt;inkel&lt;/a&gt; and his
+plain simple daemon lib &lt;a href=&#34;https://github.com/inkel/fallen&#34;&gt;Fallen&lt;/a&gt;, or laugh
+with the brilliance of &lt;a href=&#34;https://github.com/tonchis/gst&#34;&gt;gst&lt;/a&gt; from the huggable
+&lt;a href=&#34;https://github.com/tonchis&#34;&gt;tonchis&lt;/a&gt;, or choose
+&lt;a href=&#34;https://github.com/lucasefe/gn&#34;&gt;gn&lt;/a&gt; the simple generator from
+&lt;a href=&#34;https://github.com/lucasefe&#34;&gt;lucasefe&lt;/a&gt; or even see your closest friend release
+outstanding projects like &lt;a href=&#34;https://github.com/pote&#34;&gt;pote&lt;/a&gt; Go dependency manager
+&lt;a href=&#34;https://github.com/pote/gpm&#34;&gt;gpm&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;But nothing prepares you to meet great people in person. You could read every
+piece of code, understand every method but you can find a special light when you
+hug them, share a beer, a gist, an informal talk.&lt;/p&gt;
+
+&lt;p&gt;You are not alone, there&amp;rsquo;s another way to see the world. A way that probably
+it&amp;rsquo;s not going to give the top notch job of your Rails shop&amp;hellip; but it&amp;rsquo;s going to
+give you an amount of knowledge that can help you overcome every rock in the
+way.&lt;/p&gt;
+
+&lt;h1 id=&#34;apply-it-to-your-life:914233283eb0f8905d54c17cc4e38b56&#34;&gt;Apply it to your life&lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Have nothing in your houses that you do not know to be useful, or believe to
+be beautiful.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;William Morris&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Sometimes in life you had to make choices. Choices that go in the opposite
+direction that your brain tells you.&lt;/p&gt;
+
+&lt;p&gt;One year ago I had a ticket for &lt;a href=&#34;http://eurucamp.org&#34;&gt;Eurucamp&lt;/a&gt;, a ticket that
+was around 70EUR if I recall correctly. And I give it away&amp;hellip; I really needed
+the money but I couldn&amp;rsquo;t use it.&lt;/p&gt;
+
+&lt;p&gt;But I had an opportunity, the opportunity to invest my money in hope. Hope in
+someone I didn&amp;rsquo;t know. Hope that having less is going to give me more in the
+future.&lt;/p&gt;
+
+&lt;p&gt;I tweeted to &lt;a href=&#34;https://twitter.com/eurucamp&#34;&gt;@eurucamp&lt;/a&gt; telling them that I had a
+ticket to give away for a good reason. Few moments after that
+&lt;a href=&#34;https://twitter.com/sheley&#34;&gt;@sheley&lt;/a&gt; answered me telling me that she wanted to
+switch careers and wanted to go to Eurucamp.&lt;/p&gt;
+
+&lt;p&gt;I gave her the ticket with some minor conditions, that happened one year ago. A
+Few weeks ago she told me that she now have her first job as a developer.
+I&amp;rsquo;m extremely proud of her and I&amp;rsquo;m eager to know what&amp;rsquo;s next.&lt;/p&gt;
+
+&lt;p&gt;She wrote her journey in &lt;a href=&#34;http://ihatehandshakes.com/blog/2014/it-takes-a-village-to-make-a-programmer/&#34;&gt;her blog&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;UPDATE:&lt;/strong&gt; Currently I see the blog down, but you can see a &lt;a href=&#34;http://webcache.googleusercontent.com/search?q=cache:ihatehandshakes.com/blog/2014/it-takes-a-village-to-make-a-programmer/&#34;&gt;cached
+version&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I started applying that minimalism to my life and my work habits.&lt;/p&gt;
+
+&lt;p&gt;I don&amp;rsquo;t have services on login, I have this in my &lt;code&gt;.zshrc&lt;/code&gt; and this
+&lt;a href=&#34;https://github.com/elcuervo/dotfiles/blob/master/zsh/zsh/tools.sh&#34;&gt;tool&lt;/a&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;load_services() {
+  if [ -f &amp;quot;.services&amp;quot; ]; then start_services; fi;
+}
+
+chpwd() {
+  load_services
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In this journey you find stuff&amp;hellip; stuff that changes you. You inspire and get
+inspired by people but also by the things around you.&lt;/p&gt;
+
+&lt;p&gt;In this attempt to become a minimalist, in code and life I found something else.
+I found the inspiration and the transpiration to break my limits, my rules.&lt;/p&gt;
+
+&lt;p&gt;When you find a way you want to share it as well and that&amp;rsquo;s what I&amp;rsquo;ve been doing
+in my talks but one talk is different one talk is the echo of my thoughts it had
+my rage and my love.&lt;/p&gt;
+
+&lt;p&gt;My talk in &lt;a href=&#34;http://rubyconfargentina.org&#34;&gt;Ruby Conf Argentina&lt;/a&gt; it&amp;rsquo;s a sum of my
+beliefs.&lt;/p&gt;
+
+&lt;p&gt;For every action there&amp;rsquo;s a reaction. The great people who inspired me gave me
+the tools to became who am I. And that&amp;rsquo;s why I know this talk it&amp;rsquo;s just the echo
+of great people. The ones who fought clutter, noise and oppression.&lt;/p&gt;
+
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;095e73303aab0131eddb6ef1f34b6106&#34; data-ratio=&#34;1.33333333333333&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;Everyone needs a war and an ideal to stand upon. And thanks to my friends I
+found mine.&lt;/p&gt;
+
+&lt;h1 id=&#34;live-and-let-die:914233283eb0f8905d54c17cc4e38b56&#34;&gt;Live and let die&lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The secret of happiness, you see, is not found in seeking more, but in
+developing the capacity to enjoy less.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Socrates&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This is my way, the path I&amp;rsquo;ve chosen. Most of the things you read here will only
+apply to me but maybe and just maybe can inspire you to do something else.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;d love to be able to inspire someone as others inspire me.&lt;/p&gt;
+
+&lt;p&gt;I can&amp;rsquo;t see my life without code, I can&amp;rsquo;t see my code without minimalism
+therefore I can&amp;rsquo;t see my life without minimalism. It&amp;rsquo;s one thing, and a thing
+that pushes me forward.&lt;/p&gt;
+
+&lt;p&gt;Losing can be hard and unnatural. Getting rid of layers and layers in life can
+become a struggle since we are raised in a world were you are measured based on
+what you have.&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s your life and your code, you have the power to choose your way and share it
+if you want but remember , it&amp;rsquo;s your way, your life and at the end the race it&amp;rsquo;s
+only against yourself.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Gost</title>
+      <link>/blog/gost/</link>
+      <pubDate>Fri, 21 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/gost/</guid>
+      <description>&lt;p&gt;There are a lot of fantastic projects out there. One of them being
+&lt;a href=&#34;http://www.goworker.org/&#34;&gt;goworker&lt;/a&gt; which is a
+&lt;a href=&#34;https://github.com/defunkt/resque&#34;&gt;Resque&lt;/a&gt; compatible project.&lt;/p&gt;
+
+&lt;p&gt;But sometimes you want something simpler. And as usual is easy to get that kind
+of simplicity of the right Ruby projects.&lt;/p&gt;
+
+&lt;p&gt;This time the inspiration comes from &lt;a href=&#34;https://github.com/soveran/ost&#34;&gt;Ost&lt;/a&gt;. This
+is a lightweight lib to enqueue jobs to be executed in workers.&lt;/p&gt;
+
+&lt;p&gt;To push a job you simply do:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;Ost[:videos_to_process].push(@video.id)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And to do something with it:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;require &amp;quot;ost&amp;quot;
+
+Ost[:videos_to_process].each do |id|
+  # Do something with it!
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Inspired bit its simplicity I wrote &lt;a href=&#34;https://github.com/elcuervo/gost&#34;&gt;Gost&lt;/a&gt; a
+Go package that allows you to start Ost compatible queues or use it as it own
+thing.&lt;/p&gt;
+
+&lt;p&gt;Some examples:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;import &amp;quot;github.com/elcuervo/gost&amp;quot;
+
+// ...
+
+gost := gost.Connect(&amp;quot;:6379&amp;quot;)
+gost.Push(&amp;quot;my_jobs&amp;quot;, &amp;quot;id_to_be_procesed&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And that&amp;rsquo;s it, the &lt;code&gt;id_to_be_procesed&lt;/code&gt; id is pushed to the &lt;code&gt;my_jobs&lt;/code&gt; queue ready
+for the next worker to fetch it.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;gost.Each(&amp;quot;my_jobs&amp;quot;, func(id string) bool {
+  if(doesSomethingWithTheId(id)) {
+    // Everything is ok
+    return true
+  } else {
+    // If the fn returns false the
+    // items is kept in the backup key
+    return false
+  }
+})
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You can do more things like knowing how many items are to be executed:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;gost.Items(&amp;quot;my_jobs&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Or stoping the worker. Useful if you want to make your worker gracefully exit
+given a system signal.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;gost.Stop()
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Twitcher</title>
+      <link>/blog/twitcher/</link>
+      <pubDate>Fri, 21 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/twitcher/</guid>
+      <description>
+
+&lt;p&gt;One of the beautiful things about Open Source it&amp;rsquo;s just to build something you
+want ONLY because you want it.&lt;/p&gt;
+
+&lt;p&gt;Everyone has a mentor or at least references, people you admire. On top of my
+list are &lt;a href=&#34;https://github.com/soveran&#34;&gt;soveran&lt;/a&gt;, &lt;a href=&#34;https://github.com/cyx&#34;&gt;cyx&lt;/a&gt;
+and &lt;a href=&#34;https://github.com/inkel&#34;&gt;inkel&lt;/a&gt; and thanks to their guidance I&amp;rsquo;m a big
+advocate of small libraries with clear responsibilities.&lt;/p&gt;
+
+&lt;p&gt;With that in mind I made &lt;a href=&#34;https://github.com/elcuervo/twitcher&#34;&gt;Twitcher&lt;/a&gt; wich
+is basically a wrapper on top of the &lt;code&gt;Go&lt;/code&gt; &lt;code&gt;time.NewTicker&lt;/code&gt; function.&lt;/p&gt;
+
+&lt;h2 id=&#34;how-does-it-work:1f08020ee62a231837cdb8458bf1e6e2&#34;&gt;How does it work?&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;twitcher := twitcher.NewTwitcher(time.Second * 30)
+twitcher.Do(func() {
+  println(&amp;quot;I&#39;m going to be executed every 30 seconds&amp;quot;)
+})
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;But that&amp;rsquo;s just slightly different from using &lt;code&gt;Go&lt;/code&gt; stdlib &lt;code&gt;Ticker&lt;/code&gt;&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;Yes, this would be the example using it:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;t := time.NewTicker(time.Second * 30)
+go func() {
+  for {
+    &amp;lt;-t.C
+    println(&amp;quot;I&#39;m going to be executed every 30 seconds&amp;quot;)
+  }
+}()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;But the catch comes when you want to update the &amp;ldquo;ticking&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;You can&amp;rsquo;t just modify the channel you need to wrap it in something and that&amp;rsquo;s
+what Twitcher does. Let&amp;rsquo;s you easily modify the reference to the channel.&lt;/p&gt;
+
+&lt;p&gt;And for that reason &lt;code&gt;Twitcher&lt;/code&gt; exists. To have an &lt;code&gt;Update&lt;/code&gt; and an easy way to
+execute a function on each tick.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;twitcher.Update(time.Second * 5)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Will change the execution time of the function.&lt;/p&gt;
+
+&lt;p&gt;And you can &lt;code&gt;Stop&lt;/code&gt; the function just by calling it.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;twitcher.Stop()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Sometimes you want to access the channel to do your own stuff. And you can:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;for {
+  &amp;lt;-twitcher.C
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I hope you find this helpful.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Kawarau</title>
+      <link>/travels/kawarau-jump/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travels/kawarau-jump/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;/img/travels/kawarau/k01.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/travels/kawarau/k02.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/travels/kawarau/k03.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/travels/kawarau/k04.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/travels/kawarau/k05.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/travels/kawarau/k06.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;iframe width=&#34;854&#34; height=&#34;480&#34; src=&#34;https://www.youtube.com/embed/x9OF5XyQ4gQ&#34;
+frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Legends don&#39;t die</title>
+      <link>/blog/legends-dont-die/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/legends-dont-die/</guid>
+      <description>&lt;p&gt;Today is a sad sad day. Today is the day that Jim Weirich died.&lt;/p&gt;
+
+&lt;p&gt;Writing this is my way of handling the grief:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;He was that way. A long time before the gender wars, even before concurrency
+debate there was this man. He saw in you stuff that you couldn&amp;rsquo;t find in the
+mirror.&lt;/p&gt;
+
+&lt;p&gt;He was that way. Even in your darkest time he would see light in you. Having
+an intellect more developed than any other person he will just shine with his
+laugh.&lt;/p&gt;
+
+&lt;p&gt;He was that way. After being part of the internet for so long he always wanted
+to give everyone a chance, you could always learn something from him&amp;hellip; from
+yourself.&lt;/p&gt;
+
+&lt;p&gt;I know it&amp;rsquo;s hard for you to understand. I know that everyone around you rants
+and criticize everything you say. I know that people around you enjoy trying
+to look better than you, belive me&amp;hellip; I know.&lt;/p&gt;
+
+&lt;p&gt;But the world was different back then, it&amp;rsquo;s the same planet but a
+lot changed. People focus on their differences now, they look for every single
+detail that makes them different trying to ignore the absurd amount of things
+that makes all of us the same.&lt;/p&gt;
+
+&lt;p&gt;He was not that way. He had the curiosity of a child, their innocence, their
+love.&lt;/p&gt;
+
+&lt;p&gt;He was not that way. He shared every single thing he knew, not for profit, for
+fun.&lt;/p&gt;
+
+&lt;p&gt;He was not that way. He smiled and give you his opinion with respect, not for
+fame, but for a greater good.&lt;/p&gt;
+
+&lt;p&gt;I know it&amp;rsquo;s hard for you to understand how hard is the pain to see a world
+without him. But I know that you can be as amazing as he was because now you
+have a part of him. Now you know who he was and how important is to be a good
+person.&lt;/p&gt;
+
+&lt;p&gt;You are not going to meet the man, you will listen to his legend. And legends
+don&amp;rsquo;t die.&lt;/p&gt;
+
+&lt;p&gt;You are standing on the shoulders of a kind giant&amp;hellip; now aim higher.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Some people want to live forever but only a few will.
+Jim is one of those people.&lt;/p&gt;
+
+&lt;p&gt;Every time someone will run &lt;code&gt;rake&lt;/code&gt; or just think about testing he will be there.
+Inspiring all of us.&lt;/p&gt;
+
+&lt;p&gt;All the blogpost written today talk about his kindness and about the way he made
+everyone he touched a better person.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m lucky enough to have shared some time with him, working, learning, laughing.&lt;/p&gt;
+
+&lt;p&gt;Thank you kind giant, now sleep.&lt;/p&gt;
+
+&lt;iframe width=&#34;100%&#34; height=&#34;450&#34; scrolling=&#34;no&#34; frameborder=&#34;no&#34; src=&#34;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/4726642&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;visual=true&#34;&gt;&lt;/iframe&gt;
+</description>
+    </item>
     
   </channel>
 </rss>
