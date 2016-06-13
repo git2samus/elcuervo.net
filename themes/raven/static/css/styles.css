@@ -177,6 +177,7 @@ h2 {
 .content iframe, .content pre {
   width: 120%;
   margin-left: -10%;
+  font-size: 20px;
 }
 
 .content pre {

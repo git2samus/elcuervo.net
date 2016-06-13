@@ -3,8 +3,23 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2014-07-05T00:00:00+00:00</lastmod>
+    <lastmod>2016-06-03T15:24:48-03:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/blog/shah-mat/</loc>
+    <lastmod>2016-06-03T15:24:48-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/rwx/</loc>
+    <lastmod>2016-06-02T15:24:48-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/onion/</loc>
+    <lastmod>2016-06-01T22:30:01-03:00</lastmod>
   </url>
   
   <url>
