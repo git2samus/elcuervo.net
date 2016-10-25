@@ -3,7 +3,7 @@
 <section id="home">
   <ul class="posts">
     {{ range (.Paginate .Data.Pages).Pages }}
-    <li>
+    <li class="blogpost" data-lang="{{ .Params.lang | default "en" }}" data-token="{{ .Params.token | default .UniqueID }}">
       <div class="special-post">
         <i class="fa fa-{{ .Params.icon }}" aria-hidden="true"></i>
       </div>
