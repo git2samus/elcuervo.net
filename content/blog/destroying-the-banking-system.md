@@ -3,10 +3,10 @@ layout: post
 title: Destroying the banking system
 subtitle: Some men just want to watch the world burn
 token: destroy-bank
-lang: es
+lang: en
 categories: [code, netsec]
 icon: pencil
-date: 2016-08-24
+date: 2016-10-25
 header: bank-fire.jpg
 attribution: Christopher Cook
 
@@ -139,7 +139,7 @@ credentials in the client.
 The thing is that you may want to steal from people... is wrong and you deserve
 to be hunt down for it but maybe and just maybe it can also be a statement.
 
-$0.01 is the less you can transfer between accounts since you can basically
+$0.01 is the less you can transfer between accounts and since you can basically
 hijack an account without being truly noticed (since you can't see anything
 really in the app).
 
@@ -185,5 +185,4 @@ that is found in a geography book.
 We need to think about security, we need to DEMAND security and transparency to
 arcane systems like banks. They need to adapt to current infosec standards.
 
-You just need one bad day to see the house of cards crumble. You know,
-hypotetically.
+You just need one bad day to see the house of cards crumble. You know, hypothetically.

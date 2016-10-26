@@ -6,8 +6,390 @@
     <description>Recent content on elcuervo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 03 Jun 2016 15:24:48 -0300</lastBuildDate>
+    <lastBuildDate>Tue, 25 Oct 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Destroying the banking system</title>
+      <link>/blog/destroying-the-banking-system/</link>
+      <pubDate>Tue, 25 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/destroying-the-banking-system/</guid>
+      <description>
+
+&lt;p&gt;&lt;em&gt;Originally published October 25th 2016&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Well, that&amp;rsquo;s a big ass clickbaith right?. This blogpost is not about any
+political statement on how to destroy capitalism or whatever, it&amp;rsquo;s not on how to
+theorically destroy the banking system&amp;hellip; this blogpost is about how I could&amp;rsquo;ve
+destroyed the economic system in Uruguay due to a tiny bug in an ebanking
+application.&lt;/p&gt;
+
+&lt;p&gt;This story begins a lot of time ago, well, a lot in Internet noteworthy time at
+least.
+One of the banks of my country emailed telling all their users that they
+have a brand new mobile app, pretty sweet right?.
+The good part is that it is pretty well designed and it runs both in iOS and
+Android.
+The bad part is that it was late at night and I was drunk so I gave it a try to
+torn it apart.&lt;/p&gt;
+
+&lt;h2 id=&#34;disclaimer&#34;&gt;Disclaimer&lt;/h2&gt;
+
+&lt;p&gt;After attempting several times to communicate in a safe way to the bank itself I
+ended up getting a manager email and the bug was reported in detail on July 7th.&lt;/p&gt;
+
+&lt;p&gt;There was several follow ups on the matter with the answer of the bug going to
+be fixed &amp;ldquo;next week&amp;rdquo;.&lt;/p&gt;
+
+&lt;h2 id=&#34;expectations&#34;&gt;Expectations&lt;/h2&gt;
+
+&lt;p&gt;I have some expectations on what a mobile ebanking app should do:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;SSL in all the endpoints.&lt;/li&gt;
+&lt;li&gt;SSL pinning on the app side.&lt;/li&gt;
+&lt;li&gt;Proper keys storage.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This is a small list on things that apps should take in consideration and things
+that pentesters should enforce in their tests.
+I want to remember you that Pokemon Go has SSL pinning&amp;hellip;&lt;/p&gt;
+
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
+
+&lt;p&gt;None of the above were present, so I started digging&amp;hellip; deep.&lt;/p&gt;
+
+&lt;p&gt;First things first, reconnaissance.
+Since the app didn&amp;rsquo;t configure &lt;a href=&#34;https://www.owasp.org/index.php/Certificate_and_Public_Key_Pinning&#34;&gt;SSL pinning&lt;/a&gt;,
+I could set up a &lt;a href=&#34;https://en.wikipedia.org/wiki/Man-in-the-middle_attack&#34;&gt;MITM attack&lt;/a&gt;
+just adding a root certificate to my device that allows the proxy to intercept
+the requests.&lt;/p&gt;
+
+&lt;p&gt;To my surprise not &lt;strong&gt;ALL&lt;/strong&gt; the request were SSL. All the bank endpoints were
+correctly set to HTTPS but one of them were not and it was a Javascript file.
+A Javascript file? Why? For the sake of curiosity I inspected the request:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;http://maps.googleapis.com/maps/api/js
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;So we have a plain HTTP request to Google Map JS API and in the app itself we have a
+pretty map with all the banks. So I expected a WebView that embeded the map for
+some reason.&lt;/p&gt;
+
+&lt;p&gt;I hijacked the request just trying some simple XSS injection. Bingo! I could
+execute any JS script in the app but what else?.&lt;/p&gt;
+
+&lt;p&gt;Having the ability to inject JS I doubted that app itself was just a website
+wrapped in &lt;a href=&#34;https://cordova.apache.org/&#34;&gt;Cordova&lt;/a&gt; or something converting the
+whole app in just a JS program giving me the option to go through all the
+corners of it.&lt;/p&gt;
+
+&lt;p&gt;As you might expect being a sensitve application handling &lt;strong&gt;REAL&lt;/strong&gt; money of
+&lt;strong&gt;REAL&lt;/strong&gt; people&amp;hellip; it was a JS program, an &lt;a href=&#34;http://ionicframework.com/&#34;&gt;Ionic&lt;/a&gt;
+app wrapped in Cordova being more explicit.&lt;/p&gt;
+
+&lt;p&gt;How do I know this? Well, remember that I can execute &lt;strong&gt;ANY&lt;/strong&gt; JS in the app?.
+Well since I just can I started a &lt;a href=&#34;https://people.apache.org/~pmuellr/weinre/docs/latest/Home.html&#34;&gt;Weinre&lt;/a&gt; server in my machine, this tool is used to debug your JS
+application in the device. Really useful to see what&amp;rsquo;s going on the device and
+in this scenario really handy to dig through everything.&lt;/p&gt;
+
+&lt;p&gt;This remote execution tool and since the app itself is just a webpage allowed me
+to execute code and change anything in my device.
+This endeavour proven to be worthy only for changing the bank&amp;rsquo;s logo for
+dickbutt and publishing that information in Twitter, remember&amp;hellip; I was drunk.&lt;/p&gt;
+
+&lt;p&gt;I called it a day I had enough.&lt;/p&gt;
+
+&lt;h2 id=&#34;the-end-is-near&#34;&gt;The end is near&lt;/h2&gt;
+
+&lt;p&gt;I wanted to know more and I have everything to learn all the banks endpoints
+and the app code itself. Remember that in this world everything is JS?:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/blog/bank-code.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Everything there, ready for the taking.&lt;/p&gt;
+
+&lt;p&gt;So, we have the application code, the endpoints, the markup and a way to access
+it and since it&amp;rsquo;s JS a way to modify it on the fly.&lt;/p&gt;
+
+&lt;p&gt;Having access to the running code itself gave me curiosity on what information
+is being stored in &lt;code&gt;localStorage&lt;/code&gt;&amp;hellip; for my horror I found the current session
+&lt;code&gt;access_token&lt;/code&gt; just there&amp;hellip; Waiting.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/blog/bank-localstorage.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;poc&#34;&gt;PoC&lt;/h2&gt;
+
+&lt;p&gt;What&amp;rsquo;s the attack vector for this?
+We have several ones.&lt;/p&gt;
+
+&lt;p&gt;One approach possible just for the lolz is SSID spoofing with a MITM injection.&lt;/p&gt;
+
+&lt;p&gt;Public wifi (and some private ones) are known to not being secure and easily
+exploitable: &lt;a href=&#34;https://medium.com/matter/heres-why-public-wifi-is-a-public-health-hazard-dd5b8dcb55e6&#34;&gt;https://medium.com/matter/heres-why-public-wifi-is-a-public-health-hazard-dd5b8dcb55e6&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The concept is really simple, we have a Raspberry Pi:
+&lt;img src=&#34;/img/blog/pi-in-the-middle.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;And this little beauty just clones a give SSID and uses the second antenna to
+give the victim(s?) Internet access and just be hidden at plain sight.&lt;/p&gt;
+
+&lt;h2 id=&#34;the-world-on-fire&#34;&gt;The world on fire&lt;/h2&gt;
+
+&lt;p&gt;All this buildup was for a reason.&lt;/p&gt;
+
+&lt;p&gt;Using this &lt;strong&gt;theorical&lt;/strong&gt; attack we could get user and passwords from the
+users&amp;hellip; even if we don&amp;rsquo;t want for any reason we can always use the stored
+credentials in the client.&lt;/p&gt;
+
+&lt;p&gt;The thing is that you may want to steal from people&amp;hellip; is wrong and you deserve
+to be hunt down for it but maybe and just maybe it can also be a statement.&lt;/p&gt;
+
+&lt;p&gt;$0.01 is the less you can transfer between accounts and since you can basically
+hijack an account without being truly noticed (since you can&amp;rsquo;t see anything
+really in the app).&lt;/p&gt;
+
+&lt;p&gt;Having access to a fair amount of accounts can allow an attacker to freeze the
+banking system for a pretty big amount of time.&lt;/p&gt;
+
+&lt;p&gt;The maximum transfer between accounts without any kind of token or two factor
+auth is $1000.&lt;/p&gt;
+
+&lt;p&gt;Then the maximum damage possible is the minimum transfer (0.01) * the transfer
+limit (1000) but then we can also take advantage that the limit is in american
+dollars but the minimum currency is 0.01 Uruguay pesos.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;1000 * 27 / 0.01 = 2.700.000 transactions.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And that&amp;rsquo;s just one account.&lt;/p&gt;
+
+&lt;p&gt;You can always use random transaction amounts to screw things up even better.
+The whole economic system DDOSed with a silly bug, in a day. Countless hours of
+manpower to revert something that shouldn&amp;rsquo;t been there.&lt;/p&gt;
+
+&lt;p&gt;And if you expand your reach you can always try some other countries just for
+the heat, just for the fire.&lt;/p&gt;
+
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;We are fucked. Period.
+Technology has taken over our society but we still treat it like magic, like a
+dark and misterious alley.&lt;/p&gt;
+
+&lt;p&gt;Trust is a fundamental thing in our world nowdays. Our banks, our goverments, we
+trust them for no real reason besides that we are supose to do it.&lt;/p&gt;
+
+&lt;p&gt;Peer reviews are one of the best ways to improve code quality but also standard
+security research MUST be a part of software development yesterday.&lt;/p&gt;
+
+&lt;p&gt;We think security and hacking is a thing that happens to other people, to other
+countries. Internet thought us that the borders are a thing of the past, a thing
+that is found in a geography book.&lt;/p&gt;
+
+&lt;p&gt;We need to think about security, we need to DEMAND security and transparency to
+arcane systems like banks. They need to adapt to current infosec standards.&lt;/p&gt;
+
+&lt;p&gt;You just need one bad day to see the house of cards crumble. You know, hypothetically.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Destruyendo el sistema bancario</title>
+      <link>/blog/destruyendo-el-sistema-bancario/</link>
+      <pubDate>Tue, 25 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/destruyendo-el-sistema-bancario/</guid>
+      <description>
+
+&lt;p&gt;&lt;em&gt;Originalmente publicado el 25 de Octubre de 2016&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Bueno, ese fue terrible clickbaith no?. Este blogpost no es acerca de niguna
+postura politica sobre como destruir el capitalismo o nada por el estilo, no es
+sobre como &amp;ldquo;teoricamente&amp;rdquo; se puede destruir el sitema bancario&amp;hellip; este blogpost
+es sobre como pude haber destruído el sistema economico de Uruguay por un
+pequeño bug en una aplicación de ebanking.&lt;/p&gt;
+
+&lt;p&gt;Esta historia empieza hace mucho tiempo, no hace mucho tiempo en los tiempos que
+maneja la internet.
+Uno de los bancos de mi pais sacó una campaña diciendole a todos sus usuarios
+que tenían una aplicación móvil nueva. Fantastico.
+Lo bueno es que está bastante bien diseñada y funciona en iOS y Android.
+Lo malo es que era la mitad de la noche y yo estaba suficientemente borracho
+como para tratar de destrozarla.&lt;/p&gt;
+
+&lt;h2 id=&#34;disclaimer&#34;&gt;Disclaimer&lt;/h2&gt;
+
+&lt;p&gt;Despu´s de intentar varias veces de comunicarme en una manera segura con el
+propio banco termine consiguiendo el email de un directivo y el bug fue
+reportado con detalle el 7 de Julio.&lt;/p&gt;
+
+&lt;p&gt;Se siguió el thread sobre el bug con varias notas que &amp;ldquo;Seria arreglado la
+próxima semana&amp;rdquo;&lt;/p&gt;
+
+&lt;h2 id=&#34;expectativas&#34;&gt;Expectativas&lt;/h2&gt;
+
+&lt;p&gt;Tengo unas expectativas de lo que una aplicación de ebanking debería hacer:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;SSL en todo.&lt;/li&gt;
+&lt;li&gt;SSL pinning del lado de la aplicación.&lt;/li&gt;
+&lt;li&gt;Manejo adecuado de las claves.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Esta es una pequeña lista sobre las cosas que una aplicación debería considerar
+y cosas que los pentesters deberían revisar en sus tests.&lt;/p&gt;
+
+&lt;p&gt;Solo quiero recordarles que Pokemon Go tiene SSL pinning&amp;hellip;&lt;/p&gt;
+
+&lt;h2 id=&#34;realidad&#34;&gt;Realidad&lt;/h2&gt;
+
+&lt;p&gt;Ninguna de las tres estaba presente, asi que empecé a escarvar&amp;hellip; profundo.&lt;/p&gt;
+
+&lt;p&gt;Primero lo primero, reconocimiento.&lt;/p&gt;
+
+&lt;p&gt;Ya que la aplicacion no configuro &lt;a href=&#34;https://www.owasp.org/index.php/Certificate_and_Public_Key_Pinning&#34;&gt;SSL pinning&lt;/a&gt; correctamente
+es muy fácil intentar un &lt;a href=&#34;https://en.wikipedia.org/wiki/Man-in-the-middle_attack&#34;&gt;MITM attack&lt;/a&gt;
+solo agregando un certificado raiz a mi dispositivo que me permita interceptar
+todas las llamadas.&lt;/p&gt;
+
+&lt;p&gt;Fue una sorpresa encontrar que no &lt;strong&gt;TODAS&lt;/strong&gt; las llamadas tuvieran SSL.
+Todos los recursos del banco estaban correctamente como HTTPS pero uno de ellos
+no y casualmente era un Javascript.
+Un Javascript? Por qué? Solo por curiosidad lo miré:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;http://maps.googleapis.com/maps/api/js
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Entonces, tenemos un archivo HTTP plano pidiendo el Google Map JS API
+directamente a la aplicacion para poder ver un mapa de todos los bancos.
+Entonces lo lógico sería una WebView embebida por alguna razón.&lt;/p&gt;
+
+&lt;p&gt;Intercepté la llamada solo probando una simple injección XSS. Bingo! Puedo
+ejecutar cualquier JS internamente a la aplicación, que más?&lt;/p&gt;
+
+&lt;p&gt;Teniendo la habilidad de inyectar cualquier JS no fuera solamente un sitio web
+empaquetado en &lt;a href=&#34;https://cordova.apache.org/&#34;&gt;Cordova&lt;/a&gt; o algo asi conviertiendo
+la aplicación en solo un programa en JS dandome la opción de investigar cada
+rincón de ella.&lt;/p&gt;
+
+&lt;p&gt;Como uno esperaría siendo una aplicación que maneja dinero &lt;strong&gt;REAL&lt;/strong&gt; de gente
+&lt;strong&gt;REAL&lt;/strong&gt; era&amp;hellip; solamente un programa JS, un programa usando &lt;a href=&#34;http://ionicframework.com/&#34;&gt;Ionic&lt;/a&gt;
+empaquetado con Cordova para ser mas explicito.&lt;/p&gt;
+
+&lt;p&gt;Cómo es que sé esto? Bueno, se acuerdan que es posible ejecutar &lt;strong&gt;CUALQUIER&lt;/strong&gt; JS
+en la aplicación?.
+Bueno, como puedo ejecutar lo que sea inicié un servidor de &lt;a href=&#34;https://people.apache.org/~pmuellr/weinre/docs/latest/Home.html&#34;&gt;Weinre&lt;/a&gt; en mi maquina.
+Esta herramienta facilita el debug de una aplicación JS dentro del dispositivo.
+Extremadamente util para saber que esta sucediendo en el dispositivo y en este
+escenario muy util para ver todo lo que pasa.&lt;/p&gt;
+
+&lt;p&gt;Esta herramienta de ejecución de código remoto (y ya que la aplicación era solo
+un sitio web) me permitió ejecutar y cambiar lo que quisiese.
+Este camiino demostró solo útil para cambiar el logo del banco por un Dickbutt y
+publicando todo esto en Twitter&amp;hellip; porque bueno&amp;hellip; estaba borracho.&lt;/p&gt;
+
+&lt;p&gt;Di el dia por terminado, ya hice mucho.&lt;/p&gt;
+
+&lt;h2 id=&#34;el-fin-esta-cerca&#34;&gt;El fin esta cerca.&lt;/h2&gt;
+
+&lt;p&gt;Quería saber mas y tenía todo para aprender de los recursos del banco y del
+código de la propia aplicación. Como toda la aplicación es JS es posible
+conseguir esto:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/blog/bank-code.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Todo, a la mano.&lt;/p&gt;
+
+&lt;p&gt;Entonces, tenemos el código de la aplicación, los recursos, la estructura y una
+manera de acceder a todo y modificarlo ya que es solo JS.&lt;/p&gt;
+
+&lt;p&gt;Teniendo acceso la código que se esta ejecutando me dió curiosidad de que
+informacion estaba siendo guardada en &lt;code&gt;localStorage&lt;/code&gt;&amp;hellip; para mi horror encontré
+la sesión actual en &lt;code&gt;access_token&lt;/code&gt; ahí&amp;hellip; esperando.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/blog/bank-localstorage.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;prueba-de-concepto&#34;&gt;Prueba de Concepto&lt;/h2&gt;
+
+&lt;p&gt;Pero que tipo de vector de ataque podemos usar?
+Tenemos muchas opciones&lt;/p&gt;
+
+&lt;p&gt;Un ataque posible solo para divertirme fue SSID spoofing con un MITM injection.&lt;/p&gt;
+
+&lt;p&gt;Cualquier wifi pública (y muchas privadas) son claramente no segura y pueden ser
+facilmente atacables: &lt;a href=&#34;https://medium.com/matter/heres-why-public-wifi-is-a-public-health-hazard-dd5b8dcb55e6&#34;&gt;https://medium.com/matter/heres-why-public-wifi-is-a-public-health-hazard-dd5b8dcb55e6&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;El concepto es muy simple, tenemos una Raspberry Pi:
+&lt;img src=&#34;/img/blog/pi-in-the-middle.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Esta pequeña bestia clona un SSD y usa la segunda antena para darle a la
+victima(s?) acceso a Internet y poder ocultarse a simple vista.&lt;/p&gt;
+
+&lt;h2 id=&#34;el-mundo-en-llamas&#34;&gt;El mundo en llamas.&lt;/h2&gt;
+
+&lt;p&gt;Todo este suspenso fue por una razón.&lt;/p&gt;
+
+&lt;p&gt;Usando este ataque &lt;strong&gt;teorico&lt;/strong&gt; podemos obtener usuario y password de cualquier
+usuario&amp;hellip; y por si fuera poco podemos usar las credenciales que estan guardadas
+en la aplicación para hacer menos esfuerzo.&lt;/p&gt;
+
+&lt;p&gt;El tema es: puede que quieras robarle a personas&amp;hellip; está mal y merecés ser
+procesado pero talvez, y solo talvez, también puede ser un mensaje.&lt;/p&gt;
+
+&lt;p&gt;$0.01 es la mínima trasferencia posible entre cuentas entre cuentas y no serias
+noado (ya que no hay ningún tipo de notificación).&lt;/p&gt;
+
+&lt;p&gt;Teniendo acceso a un manojo de cuentas le puede permitir a un atacante congelar
+el sistema bancario por un tiempo considerable.&lt;/p&gt;
+
+&lt;p&gt;La máxima transferencia entre cuentas sin ningún tipo de token o autenticación a
+dos pasos son $1000.&lt;/p&gt;
+
+&lt;p&gt;Entonces el daño máximo posible es la transferencia minima (0.01) * el límite de
+transferencias (1000) pero entonces podemos aprovecharnos de que el límite es en
+dólares americanos pero el mínimo es 0.01 pesos uruguayos.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;1000 * 27 / 0.01 = 2.700.000 transactions.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Y eso es solamente para una cuenta.&lt;/p&gt;
+
+&lt;p&gt;Siempre se pueden usar cantidades al azar en las transacciones para joder todo
+aún mas.
+Todo el sistema económico DDOSeado por un error tonto, en un día. Incontables
+horas hombre para revertir algo que no debería estar ahí.&lt;/p&gt;
+
+&lt;p&gt;Y si expanden el alcance siempre se pueden intentar transacciones a otors países
+solo para ver que pasa.&lt;/p&gt;
+
+&lt;h2 id=&#34;conclusión&#34;&gt;Conclusión&lt;/h2&gt;
+
+&lt;p&gt;Estamos cagados. Fin.
+La tecnología es parte de nuestras socieded pero aún así la tratamos como magia,
+como un callejón oscuro y misterioso.&lt;/p&gt;
+
+&lt;p&gt;La confianza es fundamental en nuestro mundo actual. Nuestros bancos, nuestros
+governantes, nosotros confiamos en ellos por ninguna otra razón mas allá de que
+se supone que confiemos.&lt;/p&gt;
+
+&lt;p&gt;Ser evaluado por nuestros pares es una de las mejores maneras de mejorar el
+código pero ademas un standard en la investigación de seguridad que DEBERÍA ser
+parte de cualquier ciclo de desarrollo ayer.&lt;/p&gt;
+
+&lt;p&gt;Creemos que la seguridad y el hacking es algo que le sucede a otra gente, en
+otros países. Internet nos enseño que las fronteras son cosas del pasado, algo
+de un libro de geografía.&lt;/p&gt;
+
+&lt;p&gt;Tenemos que pensar en segurar, necesitamos DEMANDAR seguridad y transparencia a
+todos nuestros antigüos sistemas como lo son los bancos. Tenemos que adoptar
+standares de infosec.&lt;/p&gt;
+
+&lt;p&gt;Es solo necesario un mal dia para hacer que el castillo de cartas se derruble.
+Claro, hipoteticamente.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Shāh Māt شاه مات</title>
@@ -102,7 +484,7 @@ after a long time I can see some changes but only small ones.&lt;/p&gt;
 &lt;p&gt;This is the formula that helped me the most, maybe it can inspire you to do the
 same.&lt;/p&gt;
 
-&lt;h1 id=&#34;read:1a4e9951f8d289d8fa091b8037aac03d&#34;&gt;Read&lt;/h1&gt;
+&lt;h1 id=&#34;read&#34;&gt;Read&lt;/h1&gt;
 
 &lt;p&gt;Everything. All of it, books, blogs, cards, graffitti if you can read it do it.
 You don&amp;rsquo;t? learn it.&lt;/p&gt;
@@ -122,7 +504,7 @@ reading, long nights/long days reading.&lt;/p&gt;
 &lt;p&gt;Inspiration and knowladge make you faster, makes you wanting more. Reading takes
 time and I needed to start learning how to invest time again.&lt;/p&gt;
 
-&lt;h1 id=&#34;write:1a4e9951f8d289d8fa091b8037aac03d&#34;&gt;Write&lt;/h1&gt;
+&lt;h1 id=&#34;write&#34;&gt;Write&lt;/h1&gt;
 
 &lt;p&gt;Once you have stuff in your head it starts to overflow, not in a stroke-like
 experience but more in i-want-to-make-this-permanent experience.&lt;/p&gt;
@@ -137,7 +519,7 @@ everyone just wants to write.&lt;/p&gt;
 &lt;p&gt;They say that teaching makes you more proficient on a topic, well, writting
 makes you more proficient in yourself.&lt;/p&gt;
 
-&lt;h1 id=&#34;execute:1a4e9951f8d289d8fa091b8037aac03d&#34;&gt;Execute&lt;/h1&gt;
+&lt;h1 id=&#34;execute&#34;&gt;Execute&lt;/h1&gt;
 
 &lt;p&gt;Do. Not one thing, not one day. Everything, every day. Get on your feet, feel
 unconfortable in a bar, go out and don&amp;rsquo;t drink. Eat something unexpected, get
@@ -198,7 +580,7 @@ taking down the domain.&lt;/p&gt;
 &lt;p&gt;They give the Internet a resiliency layer to ensure that information gets out
 there.&lt;/p&gt;
 
-&lt;h1 id=&#34;run-hidden-services:dd7e60e4cd546934c0b09763f6967d0b&#34;&gt;Run hidden services&lt;/h1&gt;
+&lt;h1 id=&#34;run-hidden-services&#34;&gt;Run hidden services&lt;/h1&gt;
 
 &lt;p&gt;There are no particular differences between a normal computer service and a TOR
 hidden service. The difference is in the routing.&lt;/p&gt;
@@ -206,7 +588,7 @@ hidden service. The difference is in the routing.&lt;/p&gt;
 &lt;p&gt;Instead of connecting to a DNS to resolve certain name and then connect directly
 to the ip a hidden service is only reachable via the TOR network.&lt;/p&gt;
 
-&lt;h1 id=&#34;onion-address-generation:dd7e60e4cd546934c0b09763f6967d0b&#34;&gt;.onion address generation&lt;/h1&gt;
+&lt;h1 id=&#34;onion-address-generation&#34;&gt;.onion address generation&lt;/h1&gt;
 
 &lt;p&gt;From wikipedia:&lt;/p&gt;
 
@@ -281,7 +663,7 @@ and the &lt;code&gt;hostname&lt;/code&gt; file.&lt;/p&gt;
 &lt;p&gt;I ran this process in a &lt;code&gt;gx.large&lt;/code&gt; EC2 instance using GPU. It took 19 minutes to
 generate it.&lt;/p&gt;
 
-&lt;h1 id=&#34;server-configuration:dd7e60e4cd546934c0b09763f6967d0b&#34;&gt;Server configuration&lt;/h1&gt;
+&lt;h1 id=&#34;server-configuration&#34;&gt;Server configuration&lt;/h1&gt;
 
 &lt;p&gt;For this example I&amp;rsquo;ll be using &lt;a href=&#34;https://caddyserver.com&#34;&gt;Caddy&lt;/a&gt; because is just
 awesome and really easy:&lt;/p&gt;
@@ -373,7 +755,7 @@ Against people who wants to tag me and use me in a statistic.&lt;/p&gt;
 once there was only one acceptable gender, one acceptable color, one
 acceptable faith.&lt;/p&gt;
 
-&lt;h1 id=&#34;a-rock-in-a-pond:ec7f2f36e548c1f1f32c9e72d1aa72b3&#34;&gt;A rock in a pond&lt;/h1&gt;
+&lt;h1 id=&#34;a-rock-in-a-pond&#34;&gt;A rock in a pond&lt;/h1&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;For to be free is not merely to cast off one&amp;rsquo;s chains, but to live in a way
@@ -396,7 +778,7 @@ life.&lt;/p&gt;
 &lt;p&gt;Some things inspire you to go the extra mile. Some things trigger that part of
 you that was asleep. Some things happen all over again.&lt;/p&gt;
 
-&lt;h1 id=&#34;disobey:ec7f2f36e548c1f1f32c9e72d1aa72b3&#34;&gt;Disobey&lt;/h1&gt;
+&lt;h1 id=&#34;disobey&#34;&gt;Disobey&lt;/h1&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;And our topic is topsy-turvy: civil disobedience. As soon as you say the topic
@@ -461,7 +843,7 @@ solutions only because the problem looks complex itself.&lt;/p&gt;
 &lt;p&gt;So this is a brief story on my journey from a complex point of view &lt;strong&gt;ONLY&lt;/strong&gt; in code
 to a minimal view not only in code but also in my life.&lt;/p&gt;
 
-&lt;h1 id=&#34;allow-yourself-to-be-inspired:914233283eb0f8905d54c17cc4e38b56&#34;&gt;Allow yourself to be inspired&lt;/h1&gt;
+&lt;h1 id=&#34;allow-yourself-to-be-inspired&#34;&gt;Allow yourself to be inspired&lt;/h1&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Everything should be made as simple as possible, but not simpler.&lt;/p&gt;
@@ -551,7 +933,7 @@ understanding every part of the app. When things go wrong I could easily
 identify it and fix it&amp;hellip; I was extremelly happy knowing that the app was truly
 a part of me.&lt;/p&gt;
 
-&lt;h1 id=&#34;build-your-own-tools:914233283eb0f8905d54c17cc4e38b56&#34;&gt;Build your own tools&lt;/h1&gt;
+&lt;h1 id=&#34;build-your-own-tools&#34;&gt;Build your own tools&lt;/h1&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Simplicity is the final achievement. After one has played a vast quantity of
@@ -605,7 +987,7 @@ And with minimalism in mind I gave this talk:&lt;/p&gt;
 
 &lt;iframe src=&#34;//player.vimeo.com/video/44025029&#34; width=&#34;500&#34; height=&#34;283&#34; frameborder=&#34;0&#34; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;h1 id=&#34;you-won-t-be-alone:914233283eb0f8905d54c17cc4e38b56&#34;&gt;You won&amp;rsquo;t be alone&lt;/h1&gt;
+&lt;h1 id=&#34;you-won-t-be-alone&#34;&gt;You won&amp;rsquo;t be alone&lt;/h1&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Perfection is achieved, not when there is nothing more to add, but when there
@@ -637,7 +1019,7 @@ it&amp;rsquo;s not going to give the top notch job of your Rails shop&amp;hellip
 give you an amount of knowledge that can help you overcome every rock in the
 way.&lt;/p&gt;
 
-&lt;h1 id=&#34;apply-it-to-your-life:914233283eb0f8905d54c17cc4e38b56&#34;&gt;Apply it to your life&lt;/h1&gt;
+&lt;h1 id=&#34;apply-it-to-your-life&#34;&gt;Apply it to your life&lt;/h1&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Have nothing in your houses that you do not know to be useful, or believe to
@@ -707,7 +1089,7 @@ of great people. The ones who fought clutter, noise and oppression.&lt;/p&gt;
 &lt;p&gt;Everyone needs a war and an ideal to stand upon. And thanks to my friends I
 found mine.&lt;/p&gt;
 
-&lt;h1 id=&#34;live-and-let-die:914233283eb0f8905d54c17cc4e38b56&#34;&gt;Live and let die&lt;/h1&gt;
+&lt;h1 id=&#34;live-and-let-die&#34;&gt;Live and let die&lt;/h1&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;The secret of happiness, you see, is not found in seeking more, but in
@@ -826,7 +1208,7 @@ advocate of small libraries with clear responsibilities.&lt;/p&gt;
 &lt;p&gt;With that in mind I made &lt;a href=&#34;https://github.com/elcuervo/twitcher&#34;&gt;Twitcher&lt;/a&gt; wich
 is basically a wrapper on top of the &lt;code&gt;Go&lt;/code&gt; &lt;code&gt;time.NewTicker&lt;/code&gt; function.&lt;/p&gt;
 
-&lt;h2 id=&#34;how-does-it-work:1f08020ee62a231837cdb8458bf1e6e2&#34;&gt;How does it work?&lt;/h2&gt;
+&lt;h2 id=&#34;how-does-it-work&#34;&gt;How does it work?&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;twitcher := twitcher.NewTwitcher(time.Second * 30)
 twitcher.Do(func() {
