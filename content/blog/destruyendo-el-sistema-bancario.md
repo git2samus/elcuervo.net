@@ -13,9 +13,9 @@ attribution: Christopher Cook
 ---
 _Originalmente publicado el 25 de Octubre de 2016_
 
-Bueno, ese fue terrible clickbaith no?. Este blogpost no es acerca de niguna
+Bueno, ese fue terrible clickbaith no?. Este blogpost no es acerca de ninguna
 postura politica sobre como destruir el capitalismo o nada por el estilo, no es
-sobre como "teoricamente" se puede destruir el sitema bancario... este blogpost
+sobre como "teóricamente" se puede destruir el sitema bancario... este blogpost
 es sobre como pude haber destruído el sistema economico de Uruguay por un
 pequeño bug en una aplicación de ebanking.
 
@@ -33,7 +33,7 @@ Después de intentar varias veces de comunicarme en una manera segura con el
 propio banco termine consiguiendo el email de un directivo y el bug fue
 reportado con detalle el 7 de Julio.
 
-Se siguió el thread sobre el bug con varias notas que "Seria arreglado la
+Se siguió el thread sobre el bug con varias notas que "Sería arreglado la
 próxima semana"
 
 ## Expectativas
