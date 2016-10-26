@@ -29,7 +29,7 @@ como para tratar de destrozarla.
 
 ## Disclaimer
 
-Despu´s de intentar varias veces de comunicarme en una manera segura con el
+Después de intentar varias veces de comunicarme en una manera segura con el
 propio banco termine consiguiendo el email de un directivo y el bug fue
 reportado con detalle el 7 de Julio.
 
@@ -76,9 +76,9 @@ Entonces lo lógico sería una WebView embebida por alguna razón.
 Intercepté la llamada solo probando una simple injección XSS. Bingo! Puedo
 ejecutar cualquier JS internamente a la aplicación, que más?
 
-Teniendo la habilidad de inyectar cualquier JS no fuera solamente un sitio web
-empaquetado en [Cordova](https://cordova.apache.org/) o algo asi conviertiendo
-la aplicación en solo un programa en JS dandome la opción de investigar cada
+Teniendo la habilidad de inyectar cualquier JS  me dio curiosidad que la
+aplicación no fuera mas que un sitio web empaquetado en [Cordova](https://cordova.apache.org/)
+conviertiendo toda la aplicación en solo un programa en JS y con eso  dandome la opción de investigar cada
 rincón de ella.
 
 Como uno esperaría siendo una aplicación que maneja dinero **REAL** de gente
@@ -125,13 +125,13 @@ Tenemos muchas opciones
 
 Un ataque posible solo para divertirme fue SSID spoofing con un MITM injection.
 
-Cualquier wifi pública (y muchas privadas) son claramente no segura y pueden ser
+Cualquier wifi pública (y muchas privadas) son claramente no seguras y pueden ser
 facilmente atacables: https://medium.com/matter/heres-why-public-wifi-is-a-public-health-hazard-dd5b8dcb55e6
 
 El concepto es muy simple, tenemos una Raspberry Pi:
 ![](/img/blog/pi-in-the-middle.jpg)
 
-Esta pequeña bestia clona un SSD y usa la segunda antena para darle a la
+Esta pequeña bestia clona un SSID y usa la segunda antena para darle a la
 victima(s?) acceso a Internet y poder ocultarse a simple vista.
 
 ## El mundo en llamas.
@@ -146,7 +146,7 @@ El tema es: puede que quieras robarle a personas... está mal y merecés ser
 procesado pero talvez, y solo talvez, también puede ser un mensaje.
 
 $0.01 es la mínima trasferencia posible entre cuentas entre cuentas y no serias
-noado (ya que no hay ningún tipo de notificación).
+notificados (ya que no hay ningún tipo de notificación).
 
 Teniendo acceso a un manojo de cuentas le puede permitir a un atacante congelar
 el sistema bancario por un tiempo considerable.
@@ -179,7 +179,7 @@ La tecnología es parte de nuestras socieded pero aún así la tratamos como mag
 como un callejón oscuro y misterioso.
 
 La confianza es fundamental en nuestro mundo actual. Nuestros bancos, nuestros
-governantes, nosotros confiamos en ellos por ninguna otra razón mas allá de que
+gobernantes, nosotros confiamos en ellos por ninguna otra razón mas allá de que
 se supone que confiemos.
 
 Ser evaluado por nuestros pares es una de las mejores maneras de mejorar el

@@ -221,7 +221,7 @@ como para tratar de destrozarla.&lt;/p&gt;
 
 &lt;h2 id=&#34;disclaimer&#34;&gt;Disclaimer&lt;/h2&gt;
 
-&lt;p&gt;Despu´s de intentar varias veces de comunicarme en una manera segura con el
+&lt;p&gt;Después de intentar varias veces de comunicarme en una manera segura con el
 propio banco termine consiguiendo el email de un directivo y el bug fue
 reportado con detalle el 7 de Julio.&lt;/p&gt;
 
@@ -269,9 +269,9 @@ Entonces lo lógico sería una WebView embebida por alguna razón.&lt;/p&gt;
 &lt;p&gt;Intercepté la llamada solo probando una simple injección XSS. Bingo! Puedo
 ejecutar cualquier JS internamente a la aplicación, que más?&lt;/p&gt;
 
-&lt;p&gt;Teniendo la habilidad de inyectar cualquier JS no fuera solamente un sitio web
-empaquetado en &lt;a href=&#34;https://cordova.apache.org/&#34;&gt;Cordova&lt;/a&gt; o algo asi conviertiendo
-la aplicación en solo un programa en JS dandome la opción de investigar cada
+&lt;p&gt;Teniendo la habilidad de inyectar cualquier JS  me dio curiosidad que la
+aplicación no fuera mas que un sitio web empaquetado en &lt;a href=&#34;https://cordova.apache.org/&#34;&gt;Cordova&lt;/a&gt;
+conviertiendo toda la aplicación en solo un programa en JS y con eso  dandome la opción de investigar cada
 rincón de ella.&lt;/p&gt;
 
 &lt;p&gt;Como uno esperaría siendo una aplicación que maneja dinero &lt;strong&gt;REAL&lt;/strong&gt; de gente
@@ -318,13 +318,13 @@ Tenemos muchas opciones&lt;/p&gt;
 
 &lt;p&gt;Un ataque posible solo para divertirme fue SSID spoofing con un MITM injection.&lt;/p&gt;
 
-&lt;p&gt;Cualquier wifi pública (y muchas privadas) son claramente no segura y pueden ser
+&lt;p&gt;Cualquier wifi pública (y muchas privadas) son claramente no seguras y pueden ser
 facilmente atacables: &lt;a href=&#34;https://medium.com/matter/heres-why-public-wifi-is-a-public-health-hazard-dd5b8dcb55e6&#34;&gt;https://medium.com/matter/heres-why-public-wifi-is-a-public-health-hazard-dd5b8dcb55e6&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;El concepto es muy simple, tenemos una Raspberry Pi:
 &lt;img src=&#34;/img/blog/pi-in-the-middle.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Esta pequeña bestia clona un SSD y usa la segunda antena para darle a la
+&lt;p&gt;Esta pequeña bestia clona un SSID y usa la segunda antena para darle a la
 victima(s?) acceso a Internet y poder ocultarse a simple vista.&lt;/p&gt;
 
 &lt;h2 id=&#34;el-mundo-en-llamas&#34;&gt;El mundo en llamas.&lt;/h2&gt;
@@ -339,7 +339,7 @@ en la aplicación para hacer menos esfuerzo.&lt;/p&gt;
 procesado pero talvez, y solo talvez, también puede ser un mensaje.&lt;/p&gt;
 
 &lt;p&gt;$0.01 es la mínima trasferencia posible entre cuentas entre cuentas y no serias
-noado (ya que no hay ningún tipo de notificación).&lt;/p&gt;
+notificados (ya que no hay ningún tipo de notificación).&lt;/p&gt;
 
 &lt;p&gt;Teniendo acceso a un manojo de cuentas le puede permitir a un atacante congelar
 el sistema bancario por un tiempo considerable.&lt;/p&gt;
@@ -371,7 +371,7 @@ La tecnología es parte de nuestras socieded pero aún así la tratamos como mag
 como un callejón oscuro y misterioso.&lt;/p&gt;
 
 &lt;p&gt;La confianza es fundamental en nuestro mundo actual. Nuestros bancos, nuestros
-governantes, nosotros confiamos en ellos por ninguna otra razón mas allá de que
+gobernantes, nosotros confiamos en ellos por ninguna otra razón mas allá de que
 se supone que confiemos.&lt;/p&gt;
 
 &lt;p&gt;Ser evaluado por nuestros pares es una de las mejores maneras de mejorar el
