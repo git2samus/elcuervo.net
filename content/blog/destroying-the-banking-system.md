@@ -13,16 +13,16 @@ attribution: Christopher Cook
 ---
 _Originally published October 25th 2016_
 
-Well, that's a big ass clickbaith right?. This blogpost is not about any
+Well, that's a big ass clickbait right?. This blogpost is not about any
 political statement on how to destroy capitalism or whatever, it's not on how to
-theorically destroy the banking system... this blogpost is about how I could've
+theoretically destroy the banking system... this blogpost is about how I could've
 destroyed the economic system in Uruguay due to a tiny bug in an ebanking
 application.
 
 This story begins a lot of time ago, well, a lot in Internet noteworthy time at
 least.
 One of the banks of my country emailed telling all their users that they
-have a brand new mobile app, pretty sweet right?.
+had a brand new mobile app, pretty sweet right?.
 The good part is that it is pretty well designed and it runs both in iOS and
 Android.
 The bad part is that it was late at night and I was drunk so I gave it a try to
@@ -44,9 +44,9 @@ I have some expectations on what a mobile ebanking app should do:
 * SSL pinning on the app side.
 * Proper keys storage.
 
-This is a small list on things that apps should take in consideration and things
+This is a small list on things that apps should take into consideration and things
 that pentesters should enforce in their tests.
-I want to remember you that Pokemon Go has SSL pinning...
+I want to remind you that Pokemon Go has SSL pinning...
 
 ## Reality
 
@@ -87,7 +87,7 @@ Well since I just can I started a [Weinre](https://people.apache.org/~pmuellr/we
 application in the device. Really useful to see what's going on the device and
 in this scenario really handy to dig through everything.
 
-This remote execution tool and since the app itself is just a webpage allowed me
+This is a remote execution tool and since the app itself is just a webpage allowed me
 to execute code and change anything in my device.
 This endeavour proven to be worthy only for changing the bank's logo for
 dickbutt and publishing that information in Twitter, remember... I was drunk.
@@ -125,7 +125,7 @@ exploitable: https://medium.com/matter/heres-why-public-wifi-is-a-public-health-
 The concept is really simple, we have a Raspberry Pi:
 ![](/img/blog/pi-in-the-middle.jpg)
 
-And this little beauty just clones a give SSID and uses the second antenna to
+And this little beauty just clones a given SSID and uses the second antenna to
 give the victim(s?) Internet access and just be hidden at plain sight.
 
 ## The world on fire
@@ -151,7 +151,7 @@ auth is $1000.
 
 Then the maximum damage possible is the minimum transfer (0.01) * the transfer
 limit (1000) but then we can also take advantage that the limit is in american
-dollars but the minimum currency is 0.01 Uruguay pesos.
+dollars but the minimum currency is 0.01 Uruguayan pesos.
 
 ```
 1000 * 27 / 0.01 = 2.700.000 transactions.
@@ -172,14 +172,14 @@ We are fucked. Period.
 Technology has taken over our society but we still treat it like magic, like a
 dark and misterious alley.
 
-Trust is a fundamental thing in our world nowdays. Our banks, our goverments, we
-trust them for no real reason besides that we are supose to do it.
+Trust is a fundamental thing in our world nowadays. Our banks, our goverments, we
+trust them for no real reason besides that we are supposed to do it.
 
 Peer reviews are one of the best ways to improve code quality but also standard
 security research MUST be a part of software development yesterday.
 
 We think security and hacking is a thing that happens to other people, to other
-countries. Internet thought us that the borders are a thing of the past, a thing
+countries. Internet taught us that the borders are a thing of the past, a thing
 that is found in a geography book.
 
 We need to think about security, we need to DEMAND security and transparency to
